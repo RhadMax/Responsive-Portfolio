@@ -18,7 +18,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 960px;
+  /* max-width: 960px; */
   margin: 0 auto;
   clear: both;
 }
@@ -68,6 +68,7 @@ h3 {
 }
 
 #logo {
+  margin-left: 40px;
   float: left;
   width: 250px;
   height: 90px;
@@ -84,6 +85,7 @@ h3 {
 nav {
   float: right;
   margin-top: 25px;
+  margin-right: 25px;
 }
 
 nav a {
@@ -129,9 +131,9 @@ h3, h2 {
 .main-section {
   float: left;
   width: 100%;
-  max-width: 960px;
+  max-width: 600px;
   padding: 30px;
-  margin: 0 0 40px;
+  margin: 0 0 40px 40px;
   background: #ffffff;
   border: 1px solid #dddddd;
 }
@@ -212,4 +214,58 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
+}
+
+.dropBar2 {
+  display:none;
+}
+
+@media screen and (max-width: 980px) {
+/* Was able to set the main css styling parameters and move some html id tags/classes to accomplish styling or when viewed at 980px width... matched images from instructions to page when page is viewed at each corresponding resolution width as set in inspect. 
+
+In other words: As there was no instruction on how it should appear outside of these 3 set widths, I made the default or base settings for display match the required look at 980px. */
+}
+
+@media screen and (max-width: 768px) {
+  .main-section {
+    max-width: 710px;
+  }
+  .auth-image {
+    width: 55%;
+    height: auto;
+  }
+  .work {
+    width:100%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  header {
+    position: static;
+  }
+  .main-section {
+    margin-left:45px;
+    margin-right:auto;
+    margin-top: 45px;
+    max-width: 520px;
+  }
+  #logo {
+    margin: 0 0;
+    width: 100%;
+  }
+  nav {
+    /* used {margin: 0 auto;} here at first but the nav kept hugging left, even though I did an inspect and couldn't find any styling elements that would be doing that to it... since it is only trying to center at this resolution for this assignment I used this 170px left margin as a bandaid fix. I dislike how this makes the responsiveness of the site not very smooth but achieved the explicit instructions as per the assignment*/
+    display: block;
+    margin: 0 auto 0 170px;
+    float: none;
+    padding: 101px 0px 11px 0px;
+  }
+  }
+  .auth-image {
+    width: 60%;
+    height: auto;
+  }
+  .work {
+    width:100%;
+  }
 }
