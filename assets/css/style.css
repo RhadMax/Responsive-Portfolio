@@ -131,7 +131,7 @@ h3, h2 {
 .main-section {
   float: left;
   width: 100%;
-  max-width: 600px;
+  max-width: 660px;
   padding: 30px;
   margin: 0 0 40px 40px;
   background: #ffffff;
@@ -143,7 +143,7 @@ h3, h2 {
 .work {
   position: relative;
   float: left;
-  width: 274px;
+  width: 279px;
   margin: 20px 0 25px;
   overflow: auto;
 }
@@ -224,6 +224,9 @@ input[type=submit] {
 /* Was able to set the main css styling parameters and move some html id tags/classes to accomplish styling or when viewed at 980px width... matched images from instructions to page when page is viewed at each corresponding resolution width as set in inspect. 
 
 In other words: As there was no instruction on how it should appear outside of these 3 set widths, I made the default or base settings for display match the required look at 980px. */
+.work {
+  
+}
 }
 
 @media screen and (max-width: 768px) {
@@ -235,7 +238,7 @@ In other words: As there was no instruction on how it should appear outside of t
     height: auto;
   }
   .work {
-    width:100%;
+    width:302px;
   }
 }
 
@@ -244,7 +247,7 @@ In other words: As there was no instruction on how it should appear outside of t
     position: static;
   }
   .main-section {
-    margin-left:45px;
+    margin-left:55px;
     margin-right:auto;
     margin-top: 45px;
     max-width: 520px;
@@ -260,7 +263,6 @@ In other words: As there was no instruction on how it should appear outside of t
     float: none;
     padding: 101px 0px 11px 0px;
   }
-  }
   .auth-image {
     width: 60%;
     height: auto;
@@ -268,4 +270,5 @@ In other words: As there was no instruction on how it should appear outside of t
   .work {
     width:100%;
   }
-}
+  }
+  
